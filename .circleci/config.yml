@@ -8,3 +8,9 @@ jobs:
     executor: ci-executor
     steps:
       - checkout
+
+      - run:
+          name: build the jekyll site
+          command: bundle install
+
+
